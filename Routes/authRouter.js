@@ -15,4 +15,7 @@ router.post('/login', controller.login)
 router.get('/users', roleMiddleware(["ADMIN"]), controller.getUsers)
 router.get('/myProfile', authMiddleware, controller.myProfile)
 
+
+
+
 module.exports = router
